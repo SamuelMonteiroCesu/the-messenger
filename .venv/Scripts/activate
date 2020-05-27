@@ -46,7 +46,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV='C:\Users\emont\Documents\Samuel\Aulas\Topicos especiais\Git_workspace\PrimeiroProjeto\the-messenger\.venv'
+VIRTUAL_ENV='C:\worckspace\the-messenger\.venv'
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

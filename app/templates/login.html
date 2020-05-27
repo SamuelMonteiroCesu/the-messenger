@@ -1,0 +1,47 @@
+{% extends "base.html"%}
+
+{% block title %}
+Login
+{% endblock %}
+
+{% block content %}
+<div class="offset-1 col-10 list-div">
+    <form action="submit" , method="post">{% csrf_token %}
+        <div class="row" >
+            <div class="col-4">
+                <h2 class="text-center">Mensageiro</h2>
+                <div>
+                    {% for message in msg %}
+                    <div class="alert alert-success">
+                        <strong>Sucesso!</strong> {{ message }}
+                    </div>
+                    {% endfor %}
+                <div class="form-group">
+                    <label for="username">Usuario:</label>
+                    <input type="text" , class="form-control" id="username" name="username" placeholder="username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha:</label>
+                    <input type="password" , class="form-control" id="password" name="password" placeholder="senha">
+                </div>
+                <div>
+                    {% for message in messages %}
+                    <div class="alert alert-danger">
+                        <strong>Erro!</strong> {{ message }}
+                    </div>
+                    {% endfor %}
+                    <div class="text-center">
+                    <button type="submit" class="btn-login">Login</button>
+                    <a href="/register">
+                            <button type="button" class="btn-cad">Cadastrar-se</button>
+                        </a>
+                    </div>
+                    <div class="text-center" style="margin-top: 20%;">
+                        <a href="/">Recuperar Senha</a>
+                    </div>
+                </div>
+            </div>
+
+    </form>
+</div>
+{% endblock %}

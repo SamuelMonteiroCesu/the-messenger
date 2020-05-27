@@ -1,6 +1,6 @@
 @echo off
 
-set "VIRTUAL_ENV=C:\Users\emont\Documents\Samuel\Aulas\Topicos especiais\Git_workspace\PrimeiroProjeto\the-messenger\.venv"
+set "VIRTUAL_ENV=C:\worckspace\the-messenger\.venv"
 
 if defined _OLD_VIRTUAL_PROMPT (
     set "PROMPT=%_OLD_VIRTUAL_PROMPT%"

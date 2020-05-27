@@ -28,7 +28,7 @@ def _deactivate(args):
 _deactivate(["nondestructive"])
 aliases["deactivate"] = _deactivate
 
-$VIRTUAL_ENV = r"C:\Users\emont\Documents\Samuel\Aulas\Topicos especiais\Git_workspace\PrimeiroProjeto\the-messenger\.venv"
+$VIRTUAL_ENV = r"C:\worckspace\the-messenger\.venv"
 
 $_OLD_VIRTUAL_PATH = $PATH
 $PATH = $PATH[:]
